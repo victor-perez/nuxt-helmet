@@ -13,6 +13,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "security",
+    "headers",
+    "helmet",
+    "helmet.js",
+    "nuxt",
+    "nuxtjs",
+    "nuxt.js",
+    "x-frame-options",
+    "csp",
+    "hsts",
+    "clickjack"
+  ],
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint lib test",
