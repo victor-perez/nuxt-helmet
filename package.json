@@ -17,7 +17,8 @@
     "dev": "nuxt example",
     "lint": "eslint lib test",
     "test": "yarn lint && rimraf ./.nuxt && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "commit": "npx git-cz"
   },
   "files": [
     "lib"
@@ -35,6 +36,7 @@
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "codecov": "latest",
+    "cz-conventional-changelog": "2.1.0",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
@@ -51,5 +53,10 @@
     "request-promise-native": "latest",
     "rimraf": "^2.6.3",
     "standard-version": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
