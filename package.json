@@ -1,6 +1,6 @@
 {
   "name": "nuxt-helmet",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Helmet for nuxt",
   "license": "MIT",
   "contributors": [
@@ -17,7 +17,7 @@
     "dev": "nuxt example",
     "lint": "eslint lib test",
     "test": "yarn lint && rimraf ./.nuxt && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "release": "standard-version",
     "commit": "npx git-cz"
   },
   "files": [
