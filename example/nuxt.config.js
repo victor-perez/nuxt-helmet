@@ -7,5 +7,7 @@ export default {
   render: {
     resourceHints: false
   },
-  modules: ['~~']
+  modules: [['~~', {
+    referrerPolicy: true
+  }]]
 }
