@@ -6,6 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet?ref=badge_shield)
 
 > Easy [Helmet](https://helmetjs.github.io/) integration with Nuxt.js
 
@@ -77,3 +78,6 @@ Copyright (c) Victor Perez <vpjs@victor-perez.nl>
 
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet?ref=badge_large)
