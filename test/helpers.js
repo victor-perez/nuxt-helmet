@@ -1,4 +1,4 @@
-import { Nuxt, Builder } from 'nuxt-edge'
+import { Nuxt, Builder } from 'nuxt'
 import request from 'request-promise-native'
 import getPort from 'get-port'
 let nuxt, port
