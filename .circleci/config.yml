@@ -1,8 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node
+
 jobs:
-  build:
-    docker:
-      - image: circleci/node
+  test:
+    <<: *defaults
     steps:
       # Checkout repository
       - checkout
@@ -36,3 +41,33 @@ jobs:
       - run:
           name: Coverage
           command: yarn codecov
+      
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+  
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Publish package
+          command: yarn release
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test
+      - hold:
+        type: approval
+        requires:
+          - test
+          
+      - release:
+          requires:
+            - hold
+          filters:
+            branches:
+              only: master
