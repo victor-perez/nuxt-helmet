@@ -61,9 +61,9 @@ workflows:
     jobs:
       - test
       - hold:
-        type: approval
-        requires:
-          - test
+          type: approval
+          requires:
+            - test
           
       - release:
           requires:
