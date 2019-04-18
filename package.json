@@ -9,7 +9,6 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/git@github.com:victor-perez/nuxt-helmet.git",
   "publishConfig": {
     "access": "public"
   },
@@ -71,5 +70,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victor-perez/nuxt-helmet.git"
   }
 }
