@@ -36,14 +36,14 @@
     "lib"
   ],
   "dependencies": {
-    "consola": "^2.4.1",
-    "helmet": "^3.15.1"
+    "consola": "^2.6.2",
+    "helmet": "^3.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "babel-jest": "^24.5.0",
@@ -53,12 +53,12 @@
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jest": "^22.4.1",
-    "eslint-plugin-node": "latest",
+    "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "latest",
     "eslint-plugin-vue": "^5.2.2",
     "get-port": "5.x",
-    "husky": "latest",
+    "husky": "^2.3.0",
     "jest": "^24.5.0",
     "nuxt": "^2.6.2",
     "request": "latest",
