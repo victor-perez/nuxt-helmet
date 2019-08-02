@@ -36,8 +36,8 @@
     "lib"
   ],
   "dependencies": {
-    "consola": "^2.6.2",
-    "helmet": "^3.18.0"
+    "consola": "^2.9.0",
+    "helmet": "^3.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
