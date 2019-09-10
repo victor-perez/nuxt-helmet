@@ -6,6 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
+[![Buy Me A Coffee][bmc-shield-src]][bmc-href]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet?ref=badge_shield)
 
 > Easy [Helmet](https://helmetjs.github.io/) integration with Nuxt.js
@@ -54,6 +55,10 @@
 2. Install dependencies using `yarn install` or `npm install`
 3. Start development server using `npm run dev`
 
+## Sponsor
+
+[![Buy Me A Coffee][bmc-src]][bmc-href]
+
 ## License
 
 [MIT License](./LICENSE)
@@ -78,6 +83,8 @@ Copyright (c) Victor Perez <vpjs@victor-perez.nl>
 
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
-
+[bmc-src]: https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png
+[bmc-href]: https://www.buymeacoffee.com/victoraperez
+[bmc-shield-src]: https://img.shields.io/static/v1?message=Buy%20me%20a%20coffee&logo=buy-me-a-coffee&style=flat-square&label=Sponsor&logoColor=white&color=ff813f
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet?ref=badge_large)
