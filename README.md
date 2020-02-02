@@ -49,6 +49,9 @@
 }
 ```
 
+## Note
+Use `csp` property provided by Nuxt.js v2.11.0 for Content Security Policy (CSP) | [📖 **Nuxt Docs**](https://nuxtjs.org/api/configuration-render/#csp)
+
 ## Development
 
 1. Clone this repository
