@@ -1,14 +1,10 @@
 import { Nuxt, Builder } from 'nuxt'
-import request from 'request-promise-native'
+import got from 'got'
 import getPort from 'get-port'
 let nuxt, port
 
 export const url = path => `http://localhost:${port}${path}`
-export const get = path => request({
-  uri: url(path),
-  method: 'GET',
-  resolveWithFullResponse: true
-})
+export const get = path => got(url(path))
 
 export const stopNuxt = async () => {
   if (nuxt) {
