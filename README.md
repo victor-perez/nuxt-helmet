@@ -12,7 +12,7 @@
 > Easy [Helmet](https://helmetjs.github.io/) integration with Nuxt.js
 
 > [Helmet](https://helmetjs.github.io/) helps you secure your Nuxt apps by setting various HTTP headers. By default [Helmet](https://helmetjs.github.io/) will set the
-`X-DNS-Prefetch-Control`, `X-Frame-Options`, `Strict-Transport-Security`, `X-Download-Options`, `X-Content-Type-Options` and `X-XSS-Protection` headers. Beside that this module will also set by default the `X-Permitted-Cross-Domain-Policies` header. 
+`X-DNS-Prefetch-Control`, `X-Frame-Options`, `Strict-Transport-Security`, `X-Download-Options`, `Expect-Ct`, `Referrer-Policy` and `X-Content-Type-Options` headers. Beside that this module will also set by default the `X-Permitted-Cross-Domain-Policies` header. 
 
 [📖 **Release Notes**](https://github.com/victor-perez/nuxt-helmet/releases) | [📖 **Helmet Docs**](https://helmetjs.github.io/docs/)
 
@@ -32,18 +32,8 @@
  // @see https://helmetjs.github.io/docs/
  helmet: {
     /*
-    dnsPrefetchControl: true,
-    expectCt: true,
-    featurePolicy: true,
-    frameguard: true,
-    hidePoweredBy: true,
-    hsts: true,
-    ieNoOpen: true,
-    noCache: true,
-    noSniff: true,
-    permittedCrossDomainPolicies: true,
-    referrerPolicy: true,
-    xssFilter: true,
+    frameguard: false,
+    ...
     */
  }
 }
