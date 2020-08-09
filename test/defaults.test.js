@@ -9,7 +9,9 @@ const HEADERS = expect.objectContaining({
   'x-download-options': 'noopen',
   'x-frame-options': 'SAMEORIGIN',
   'x-permitted-cross-domain-policies': 'none',
-  'x-xss-protection': '1; mode=block',
+  'expect-ct': 'max-age=0',
+  'referrer-policy': 'no-referrer',
+  'x-xss-protection': '0',
   'strict-transport-security': 'max-age=15552000; includeSubDomains'
 })
 

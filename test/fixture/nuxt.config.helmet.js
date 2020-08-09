@@ -7,7 +7,7 @@ export default {
   buildDir: resolve(__dirname, '../../.nuxt/test/params'),
   modules: [libModule],
   helmet: {
-    referrerPolicy: true,
+    referrerPolicy: 'no-referrer',
     frameguard: false
   }
 }
