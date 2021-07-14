@@ -44,7 +44,7 @@
     "@babel/preset-env": "^7.9.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^11.0.0",
-    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config": "^4.0.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.2.2",
     "codecov": "^3.6.5",
