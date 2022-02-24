@@ -57,7 +57,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^8.3.0",
-    "get-port": "5.x",
+    "get-port": "6.x",
     "got": "11.x",
     "husky": "^4.2.3",
     "jest": "^27.4.7",
