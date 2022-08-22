@@ -1,14 +1,36 @@
 {
   "name": "nuxt-helmet",
-  "version": "2.1.0",
-  "description": "Helmet for nuxt",
+  "version": "3.0.0",
+  "description": "Helmet for Nuxt",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victor-perez/nuxt-helmet.git"
+  },
+  "homepage": "victor-perez/nuxt-helmet",
+  "bugs": {
+    "url": "https://github.com/victor-perez/nuxt-helmet/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "contributors": [
     {
       "name": "Victor Perez <vpjs@victor-perez.nl>"
+    },
+    {
+      "name": "Dan Mutombo <danker.twist@gmail.com>"
     }
   ],
-  "main": "lib/module.js",
   "publishConfig": {
     "access": "public"
   },
@@ -26,52 +48,41 @@
     "clickjack"
   ],
   "scripts": {
-    "dev": "nuxt example",
-    "lint": "eslint lib test",
-    "test": "yarn lint && rimraf ./.nuxt && jest",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "build": "nuxt-module-build",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "prepack": "yarn build && pinst --disable",
+    "test:coverage": "vitest --coverage",
+    "test:types": "tsc --build tsconfig.json",
+    "test:unit": "nuxi prepare test/fixtures/defaults && vitest run",
     "release": "semantic-release",
     "commit": "npx git-cz"
   },
-  "files": [
-    "lib"
-  ],
   "dependencies": {
-    "consola": "^2.11.3",
-    "helmet": "^5.0.1"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "helmet": "^5.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/eslint-parser": "^7.16.5",
-    "@babel/preset-env": "^7.16.8",
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
-    "@nuxtjs/eslint-config": "^8.0.0",
-    "babel-jest": "^27.4.6",
-    "codecov": "^3.6.5",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@nuxt/module-builder": "latest",
+    "@nuxt/test-utils": "npm:@nuxt/test-utils-edge@latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "c8": "^7.12.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.6.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^25.3.4",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-vue": "^8.3.0",
-    "get-port": "5.x",
-    "got": "11.x",
-    "husky": "^4.2.3",
-    "jest": "^27.4.7",
-    "nuxt": "^2.12.0",
-    "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.2"
+    "eslint": "^8.22.0",
+    "husky": "^8.0.0",
+    "nuxt": "npm:nuxt3@latest",
+    "pathe": "^0.3.5",
+    "semantic-release": "^19.0.2",
+    "vitest": "^0.22.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/victor-perez/nuxt-helmet.git"
-  }
+  "packageManager": "yarn@3.2.2"
 }
