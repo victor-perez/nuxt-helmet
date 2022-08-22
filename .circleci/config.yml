@@ -35,17 +35,18 @@ jobs:
       # Tests
       - run:
           name: Tests
-          command: yarn jest
+          command: yarn test:unit
 
       # Coverage
       - run:
           name: Coverage
-          command: yarn codecov
-      
+          command: yarn test:coverage
+
       - persist_to_workspace:
           root: ~/repo
-          paths: .
-  
+          paths:
+            - .
+
   release:
     <<: *defaults
     steps:

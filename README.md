@@ -4,7 +4,6 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Circle CI][circle-ci-src]][circle-ci-href]
 [![Codecov][codecov-src]][codecov-href]
-[![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 [![Buy Me A Coffee][bmc-shield-src]][bmc-href]
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictor-perez%2Fnuxt-helmet?ref=badge_shield)
@@ -39,14 +38,18 @@
 }
 ```
 
-## Note
-Use `csp` property provided by Nuxt.js v2.11.0 for Content Security Policy (CSP) | [📖 **Nuxt Docs**](https://nuxtjs.org/api/configuration-render/#csp)
+## Options
+`Content Security Policy` middleware is disabled by default on this module.
+
+> Visit [Helmet documentation](https://yandex.com/support/metrica/code/counter-initialize.html) for detailed information about configurable options.
+
 
 ## Development
 
 1. Clone this repository
 2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+3. Run `yarn dev:prepare` to generate type stubs.
+4. Start development server using `yarn dev`
 
 ## Sponsor
 
@@ -70,9 +73,6 @@ Copyright (c) Victor Perez <vpjs@victor-perez.nl>
 
 [codecov-src]: https://img.shields.io/codecov/c/github/victor-perez/nuxt-helmet.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/victor-perez/nuxt-helmet
-
-[david-dm-src]: https://david-dm.org/victor-perez/nuxt-helmet/status.svg?style=flat-square
-[david-dm-href]: https://david-dm.org/victor-perez/nuxt-helmet
 
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
